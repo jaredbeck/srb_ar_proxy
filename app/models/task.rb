@@ -1,3 +1,4 @@
+# typed: true
 class Task < ApplicationRecord
   def self.outstanding
     where 'due < ?', Time.current
